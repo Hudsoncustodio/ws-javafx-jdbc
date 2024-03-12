@@ -6,7 +6,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import db.DbException;
+<<<<<<< HEAD
 import gui.listeners.DataChangeListener;
+=======
+>>>>>>> cd54dd5a7f71d7ea75ac730d8531d1bcbfcb12d0
 import gui.util.Alerts;
 import gui.util.Constraints;
 import gui.util.Utils;
@@ -51,10 +54,13 @@ public class DepartmentFormController implements Initializable {
 		this.service = service;
 	}
 	
+<<<<<<< HEAD
 	public void subscribeDataChangeListener(DataChangeListener listener) {
 		dataChangeListeners.add(listener);
 	}
 	
+=======
+>>>>>>> cd54dd5a7f71d7ea75ac730d8531d1bcbfcb12d0
 	@FXML
 	public void onBtSaveAction(ActionEvent event) {
 		if(entity == null) {
@@ -66,7 +72,10 @@ public class DepartmentFormController implements Initializable {
 		try {
 			entity = getFormData();	
 			service.saveOrUpdate(entity);
+<<<<<<< HEAD
 			notifyDataChangeListener();
+=======
+>>>>>>> cd54dd5a7f71d7ea75ac730d8531d1bcbfcb12d0
 			Utils.currentStage(event).close();
 		}
 		catch(DbException e) {
@@ -75,12 +84,15 @@ public class DepartmentFormController implements Initializable {
 		
 	}
 	
+<<<<<<< HEAD
 	private void notifyDataChangeListener() {
 		for(DataChangeListener listener : dataChangeListeners) {
 			listener.onDataChanged();
 		}
 	}
 
+=======
+>>>>>>> cd54dd5a7f71d7ea75ac730d8531d1bcbfcb12d0
 	private Department getFormData() {
 		Department obj = new Department();
 		
@@ -88,7 +100,12 @@ public class DepartmentFormController implements Initializable {
 		obj.setName(txtName.getText());
 		
 		return obj;		
+<<<<<<< HEAD
 	}	
+=======
+	}
+	
+>>>>>>> cd54dd5a7f71d7ea75ac730d8531d1bcbfcb12d0
 		
 	@FXML
 	public void onBtCancelAction(ActionEvent event) {
