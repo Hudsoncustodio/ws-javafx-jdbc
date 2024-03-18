@@ -17,9 +17,9 @@ public class ValidationException extends RuntimeException {
 		return errors;		
 	}
 	
-	public void addErrors(String fieldName, String errorsMessage) {
+	public void addError(String fieldName, String errorMessage) {
 		
-		errors.put(fieldName, errorsMessage);
+		errors.put(fieldName, errorMessage);
 	}
 	
 }
