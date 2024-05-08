@@ -30,7 +30,6 @@
         </rowConstraints>
          <children>
             <Label text="Id" />
-            <Label text="Name" GridPane.rowIndex="1" />
             <TextField fx:id="txtId" editable="false" prefHeight="30.0" prefWidth="131.0" GridPane.columnIndex="1" />
             <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -43,6 +42,7 @@
                   <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel" />
                </children>
             </HBox>
+            <Label text="Name" GridPane.rowIndex="1" />
             <Label text="Email" GridPane.rowIndex="2" />
             <Label text="Birth Date" GridPane.rowIndex="3" />
             <Label text="Department" GridPane.rowIndex="5" />
